@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.dsky.typewriting.mapper.UserMapper">
+
+	<!-- save -->
+	<insert id="save" parameterType="Users">
+		replace into users(en_name,ch_name,create_time)
+		values(#{en_name}, #{ch_name},now())
+	</insert>
+</mapper>

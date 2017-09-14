@@ -1,0 +1,22 @@
+
+body {
+	width: 100%;
+	margin: 0px;
+	
+	background-color: #020202;
+}
+body{	font-family: "Microsoft YaHei","Segoe UI", "Lucida Grande", Helvetica, Arial,sans-serif;}
+
+.terminal {
+	width: 60%;
+	font-size: 26px;
+	color: #00fd55;
+	letter-spacing: 2px;
+	margin: 150px auto;
+	
+}
+
+.terminal::before {
+	content: ">";
+	margin-right: 10px;
+}
